@@ -1,0 +1,47 @@
+.home-page {
+  flex: 4;
+  overflow-y: auto;
+}
+.home-page-in {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 15px;
+  grid-row-gap: 20px;
+  padding: 15px;
+  justify-content: center;
+}
+.home-card-inner{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.home-card-in-bottom {
+  display: flex;
+  gap: 8px;
+  padding: 5px 5px 0 0;
+}
+.top-video {
+  width: 100%;
+  height: auto;
+}
+.bottom-image {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.card-info h1 {
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 500;
+  white-space: wrap;
+  margin-bottom: 5px;
+}
+.card-info span {
+  font-size: 13px;
+  font-weight: 400;
+}
+.card-info h2 {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
