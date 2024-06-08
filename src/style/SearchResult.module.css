@@ -3,8 +3,9 @@
   border-right: 1px solid var(--white);
 }
 .right {
-  overflow: auto;
+  overflow-y: auto;
   height: 100vh;
+  display: block;
 }
 .right::-webkit-scrollbar {
   display: none;
@@ -18,11 +19,34 @@
   width: 310px;
   height: auto;
 }
-.card_discrip{
+.card_discrip {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.card_discrip p{
+.card_discrip p {
   font-size: 14px;
+}
+
+/** No Found Data Display**/
+.no_data_found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.no_data_found button{
+  background: #E4D3FF;
+  border: none;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+.no_data_found h2{
+  font-size: 16px;
+  margin: 10px;
 }

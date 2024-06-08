@@ -1,5 +1,5 @@
 .sidebar_wrapper {
-  width: 120px;
+  width: 115px;
   border-right: 1px solid var(--white);
   overflow: hidden;
 }
@@ -13,6 +13,9 @@
   padding: 15px 20px;
   height: 100vh;
   overflow: auto;
+}
+.video_details::-webkit-scrollbar {
+  display: none;
 }
 /** Video Details Left Section**/
 /** Left Section Top**/
@@ -28,52 +31,51 @@
   border-radius: 5px;
 }
 /** Left Comment Section**/
-.info_section{
+.info_section {
   border: 1px solid var(--white);
   border-radius: 8px;
   padding: 15px;
 }
-.info_top{
+.info_top {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 20px;
 }
-.info_top_left h1{
- font-size: 18px;
- line-height: 20px;
+.info_top_left h1 {
+  font-size: 18px;
+  line-height: 20px;
 }
-.info_top_left span{
+.info_top_left span {
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
 }
-.info_top_right{
+.info_top_right {
   display: flex;
   justify-content: space-between;
   gap: 10px;
 }
-.likebtn{
+.likebtn {
   border: 1px solid var(--white);
   border-radius: 7px;
 }
-.likebtn button{
+.likebtn button {
   background: transparent;
   border: none;
   color: var(--white);
   font-size: 20px;
-  padding: 5px 10px; 
+  padding: 5px 10px;
 }
-.likebtn button:hover{
+.likebtn button:hover {
   background: var(--button);
 }
-.likebtn button:nth-child(1){
+.likebtn button:nth-child(1) {
   border-right: 1px solid var(--button);
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
 }
-.likebtn button:nth-child(2){
-
+.likebtn button:nth-child(2) {
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
 }

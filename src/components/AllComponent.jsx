@@ -1,9 +1,9 @@
 
 import { Route, Routes } from "react-router-dom"
 import HomePageCard from "./HomePageCard"
-import LoginPage from "../navigationcomponent/LoginPage"
-import VideoDetailsSection from "../navigationcomponent/VideoDetailsSection"
-import SearchResultComponent from "../navigationcomponent/SearchResultComponent"
+import LoginPage from "../views/LoginPage"
+import VideoDetailsSection from "../views/VideoDetailsSection"
+import SearchResultComponent from "../views/SearchResultComponent"
 
 
 function AllComponent() {

@@ -21,6 +21,7 @@ function DataProviderContext({ children }) {
       description:
         "Learn How to create stunning visualizations and dashboards using Tableau for data analysis",
       subscriber: "3248",
+      id: 1,
     },
     {
       video: "../videos/video2.mp4",
@@ -32,6 +33,7 @@ function DataProviderContext({ children }) {
       description:
         "Learn How to create stunning visualizations and dashboards using Tableau for data analysis",
       subscriber: "3248",
+      id: 2,
     },
     {
       video: "../videos/video3.mp4",
@@ -43,6 +45,7 @@ function DataProviderContext({ children }) {
       description:
         "Learn How to create stunning visualizations and dashboards using Tableau for data analysis",
       subscriber: "3248",
+      id: 3,
     },
     {
       video: "../videos/video4.mp4",
@@ -54,6 +57,7 @@ function DataProviderContext({ children }) {
       description:
         "Learn How to create stunning visualizations and dashboards using Tableau for data analysis",
       subscriber: "3248",
+      id: 4,
     },
     {
       video: "../videos/video5.mp4",
@@ -65,6 +69,7 @@ function DataProviderContext({ children }) {
       description:
         "Learn How to create stunning visualizations and dashboards using Tableau for data analysis",
       subscriber: "3248",
+      id: 5,
     },
     {
       video: "../videos/video6.mp4",
@@ -76,6 +81,7 @@ function DataProviderContext({ children }) {
       description:
         "Learn How to create stunning visualizations and dashboards using Tableau for data analysis",
       subscriber: "3248",
+      id: 6,
     },
     {
       video: "../videos/video7.mp4",
@@ -87,6 +93,7 @@ function DataProviderContext({ children }) {
       description:
         "Learn How to create stunning visualizations and dashboards using Tableau for data analysis",
       subscriber: "3248",
+      id: 7,
     },
     {
       video: "../videos/video8.mp4",
@@ -98,6 +105,7 @@ function DataProviderContext({ children }) {
       description:
         "Learn How to create stunning visualizations and dashboards using Tableau for data analysis",
       subscriber: "3248",
+      id: 8,
     },
     {
       video: "../videos/video8.mp4",
@@ -109,6 +117,7 @@ function DataProviderContext({ children }) {
       description:
         "Learn How to create stunning visualizations and dashboards using Tableau for data analysis",
       subscriber: "3248",
+      id: 9,
     },
   ]);
   const [sidebar, setSidebar] = useState([
