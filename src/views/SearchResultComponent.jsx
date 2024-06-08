@@ -19,7 +19,7 @@ function SearchResultComponent() {
 
   useEffect(() => {
     const handleVideoNavigate = (index) => () => {
-      navigate("/video_details", { state: filteredItem[index] });
+      navigate(`/video-details/${filteredItem[index].id}`, { state: filteredItem[index] });
     };
 
     const currentVideoRefs = videoRefs.current;
@@ -49,7 +49,7 @@ function SearchResultComponent() {
           <div className={`right-side ${style.right}`}>
             {filteredItem.length > 0 ? (
               filteredItem.map((item, index) => (
-                <div className={style.video_in} key={index}>
+                <div className={style.video_in} key={index} id={item.id}>
                   <video
                     src={item.video}
                     className="top-video"

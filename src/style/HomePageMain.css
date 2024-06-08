@@ -10,7 +10,7 @@
   padding: 15px;
   justify-content: center;
 }
-.home-card-inner{
+.home-card-inner {
   display: flex;
   flex-direction: column;
   justify-content: space-between;

@@ -12,7 +12,7 @@ function AllComponent() {
       <Routes>
         <Route path="/" element={<HomePageCard/>}/>
         <Route path="/login" element={<LoginPage/>}/>
-        <Route path="/video_details" element={<VideoDetailsSection/>}/>
+        <Route path="/video-details/:id" element={<VideoDetailsSection/>}/>
         <Route path="/search" element={<SearchResultComponent/>}/>
       </Routes>
     </>

@@ -9,22 +9,26 @@ function HomePageMain() {
   const { data } = useContext(DataContext);
 
   useEffect(() => {
-    const handleVideoNavigate = (index) => () => {
-      navigate("/video_details", { state: { ...data[index] } });
+    const handleVideoNavigate = (id) => () => {
+      const videoData = data.find((item) => item.id === id);
+      navigate(`/video-details/${id}`, { state: { ...videoData } });
     };
 
     const currentVideoRefs = videoRefs.current;
 
     currentVideoRefs.forEach((videoRef, index) => {
       if (videoRef) {
-        videoRef.addEventListener("click", handleVideoNavigate(index));
+        videoRef.addEventListener("click", handleVideoNavigate(data[index].id));
       }
     });
 
     return () => {
       currentVideoRefs.forEach((videoRef, index) => {
         if (videoRef) {
-          videoRef.removeEventListener("click", handleVideoNavigate(index));
+          videoRef.removeEventListener(
+            "click",
+            handleVideoNavigate(data[index].id)
+          );
         }
       });
     };
@@ -34,7 +38,7 @@ function HomePageMain() {
     <div className="home-page">
       <div className="home-page-in">
         {data.map((item, index) => (
-          <div className="home-card-inner" key={index}>
+          <div className="home-card-inner" key={item.id} id={item.id}>
             <video
               src={item.video}
               className="top-video"

@@ -131,9 +131,91 @@ function DataProviderContext({ children }) {
     { icon: <GoGear />, title: "Settings" },
   ]);
 
+  const [comments, setComments] = useState([
+    {
+      name: "Sarah Johnson",
+      userName: "@sarahjv",
+      comTime: "17",
+      title:
+        "This series is exactly what I've been looking for! Excited to dive into these advanced React patterns. Thanks for putting this together!",
+    },
+    {
+      name: "Sarah Johnson",
+      userName: "@sarahjv",
+      comTime: "17",
+      title:
+        "This series is exactly what I've been looking for! Excited to dive into these advanced React patterns. Thanks for putting this together!",
+    },
+    {
+      name: "Sarah Johnson",
+      userName: "@sarahjv",
+      comTime: "17",
+      title:
+        "This series is exactly what I've been looking for! Excited to dive into these advanced React patterns. Thanks for putting this together!",
+    },
+    {
+      name: "Sarah Johnson",
+      userName: "@sarahjv",
+      comTime: "17",
+      title:
+        "This series is exactly what I've been looking for! Excited to dive into these advanced React patterns. Thanks for putting this together!",
+    },
+    {
+      name: "Sarah Johnson",
+      userName: "@sarahjv",
+      comTime: "17",
+      title:
+        "This series is exactly what I've been looking for! Excited to dive into these advanced React patterns. Thanks for putting this together!",
+    },
+    {
+      name: "Sarah Johnson",
+      userName: "@sarahjv",
+      comTime: "17",
+      title:
+        "This series is exactly what I've been looking for! Excited to dive into these advanced React patterns. Thanks for putting this together!",
+    },
+    {
+      name: "Sarah Johnson",
+      userName: "@sarahjv",
+      comTime: "17",
+      title:
+        "This series is exactly what I've been looking for! Excited to dive into these advanced React patterns. Thanks for putting this together!",
+    },
+    {
+      name: "Sarah Johnson",
+      userName: "@sarahjv",
+      comTime: "17",
+      title:
+        "This series is exactly what I've been looking for! Excited to dive into these advanced React patterns. Thanks for putting this together!",
+    },
+    {
+      name: "Sarah Johnson",
+      userName: "@sarahjv",
+      comTime: "17",
+      title:
+        "This series is exactly what I've been looking for! Excited to dive into these advanced React patterns. Thanks for putting this together!",
+    },
+    {
+      name: "Sarah Johnson",
+      userName: "@sarahjv",
+      comTime: "17",
+      title:
+        "This series is exactly what I've been looking for! Excited to dive into these advanced React patterns. Thanks for putting this together!",
+    },
+    {
+      name: "Sarah Johnson",
+      userName: "@sarahjv",
+      comTime: "17",
+      title:
+        "This series is exactly what I've been looking for! Excited to dive into these advanced React patterns. Thanks for putting this together!",
+    },
+  ]);
+
   return (
     <>
-      <DataContext.Provider value={{ data, setData, sidebar, setSidebar }}>
+      <DataContext.Provider
+        value={{ data, setData, sidebar, setSidebar, comments, setComments }}
+      >
         {children}
       </DataContext.Provider>
     </>
