@@ -1,3 +1,5 @@
+
+/** Email Section **/
 .login-wrap {
   display: flex;
   padding: 1rem 1rem 0 1rem;
@@ -42,4 +44,12 @@ margin-bottom: 15px;
 }
 .login-wrap button:hover{
   background: #b486ff;
+}
+
+/** Password Section**/
+.login-wrap.password-area{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
 }

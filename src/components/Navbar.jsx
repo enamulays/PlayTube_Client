@@ -1,14 +1,17 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-import { useEffect, useRef, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../style/Navbar.css";
+import { DataContext } from "./DataProviderContext";
 
 function Navbar() {
   const [searchInput, setSearchInput] = useState("");
   const navigate = useNavigate();
   const inputRef = useRef();
+
+  const { login } = useContext(DataContext);
 
   useEffect(() => {
     const handleKeyDown = (e) => {
@@ -45,14 +48,18 @@ function Navbar() {
             ref={inputRef}
           />
         </div>
-        <div className="nav-sign-option">
-          <Link to="/login">
-            <button className="login-btn">Log in</button>
-          </Link>
-          <Link to="/signup">
-            <button className="signup-btn">Sign up</button>
-          </Link>
-        </div>
+        {login ? (
+          "loged"
+        ) : (
+          <div className="nav-sign-option">
+            <Link to="/login">
+              <button className="login-btn">Log in</button>
+            </Link>
+            <Link to="/signup">
+              <button className="signup-btn">Sign up</button>
+            </Link>
+          </div>
+        )}
       </div>
     </div>
   );

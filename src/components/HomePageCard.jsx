@@ -1,8 +1,9 @@
 import HomePageMain from "./HomePageMain";
 import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
+import PropTypes from 'prop-types';
 
-function HomePageCard() {
+function HomePageCard({clientIconRef}) {
   return (
     <>
       <div className="container">
@@ -10,12 +11,14 @@ function HomePageCard() {
           <Navbar />
           <div className="container-bottom">
             <Sidebar />
-            <HomePageMain/>
+            <HomePageMain clientIconRef= {clientIconRef}/>
           </div>
         </div>
       </div>
     </>
   );
 }
-
+ HomePageCard.propTypes={
+  clientIconRef: PropTypes.object.isRequired
+}
 export default HomePageCard;

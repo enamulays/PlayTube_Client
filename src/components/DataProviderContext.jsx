@@ -10,6 +10,7 @@ import { GoGear } from "react-icons/go";
 export const DataContext = createContext();
 
 function DataProviderContext({ children }) {
+  const [login, setLogin] = useState(true)
   const [data, setData] = useState([
     {
       video: "../videos/video1.mp4",
@@ -214,7 +215,7 @@ function DataProviderContext({ children }) {
   return (
     <>
       <DataContext.Provider
-        value={{ data, setData, sidebar, setSidebar, comments, setComments }}
+        value={{ data, setData, sidebar, setSidebar, comments, setComments, login, setLogin }}
       >
         {children}
       </DataContext.Provider>
