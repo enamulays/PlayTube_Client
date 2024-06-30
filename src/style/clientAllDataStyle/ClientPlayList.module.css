@@ -1,0 +1,38 @@
+
+
+.playlist {
+  padding: 10px 15px 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 15px;
+}
+.card {
+  display: block;
+  position: relative;
+}
+.card video {
+  width: 100%;
+}
+.info {
+  position: absolute;
+  bottom: 0;
+  padding: 20px 15px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: start;
+  background: #070707ad;
+}
+.info_left h4{
+  font-weight: 400;
+  font-size: 15px
+}
+.info_left h5{
+  font-size: 14px;
+  font-weight: 400;
+}
+.info h3{
+  font-weight: 400;
+  font-size: 16px
+}

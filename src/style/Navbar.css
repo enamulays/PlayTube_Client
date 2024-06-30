@@ -9,7 +9,7 @@
   align-items: center;
   padding: 10px
 }
-.nav-inner img{
+.nav-inner .play-img{
   width: 58px;
   height: auto;
 }
@@ -33,6 +33,8 @@
   outline: none;
   width: 100%;
 }
+
+/** Navbar without Sign in**/
 .nav-sign-option{
   display: flex;
   gap: 10px;
@@ -52,3 +54,5 @@
 .nav-sign-option button:hover{
   background: #3f3f3f;
 }
+
+/** Navbar With Sign in**/

@@ -1,6 +1,5 @@
 .home-page {
-  flex: 4;
-  overflow-y: auto;
+  width:100%;
 }
 .home-page-in {
   display: grid;

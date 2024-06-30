@@ -1,18 +1,18 @@
-import PropTypes from 'prop-types';
-
-function SideBarListData({sidebar}) {
+import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
+function SideBarListData({ sidebar }) {
   return (
     <ul>
-      {
-            sidebar.map((list, index)=>(
-              <li key={index}>
-                <div className="side-icon">{list.icon}</div>
-                <div className="side-text">{list.title}</div>
-              </li>
-            ))
-          }
+      {sidebar.map((list, index) => (
+        <li key={index}>
+          <Link to={list.path}>
+            <div className="side-icon">{list.icon}</div>
+            <div className="side-text">{list.title}</div>
+          </Link>
+        </li>
+      ))}
     </ul>
-  )
+  );
 }
 SideBarListData.propTypes = {
   sidebar: PropTypes.arrayOf(
@@ -22,4 +22,4 @@ SideBarListData.propTypes = {
     })
   ).isRequired,
 };
-export default SideBarListData
+export default SideBarListData;

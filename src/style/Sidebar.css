@@ -3,7 +3,7 @@
   position: sticky;
   top: 0;
   left: 0;
-  height: 100vh;
+  height: 90vh;
   width: 300px;
   border-right: 1px solid var(--white);
   overflow: hidden;
@@ -12,8 +12,9 @@
   width: 100%;
   padding: 20px 8px;
   position: relative;
+  height: 100%;
 }
-.sidebar-wrap li{
+.sidebar-wrap li a{
   list-style: none;
   display: flex;
   align-items: center;
@@ -25,11 +26,17 @@
   overflow: hidden;
 }
 .sidebar-wrap li:nth-child(7){
-  margin-top: 20rem;
+ margin-top: 50%;
 }
 .sidebar-wrap li .side-icon{
   font-size: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (min-height: 720px) {
+  .sidebar-wrap li:nth-child(7) {
+    margin-top: 95%;
+  }
 }

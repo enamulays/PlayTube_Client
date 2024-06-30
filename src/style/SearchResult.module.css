@@ -1,15 +1,4 @@
-.sidebar_wrap {
-  width: 250px;
-  border-right: 1px solid var(--white);
-}
-.right {
-  overflow-y: auto;
-  height: 100vh;
-  display: block;
-}
-.right::-webkit-scrollbar {
-  display: none;
-}
+
 .video_in {
   display: flex;
   gap: 20px;
@@ -34,6 +23,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 100px;
 }
 .no_data_found button {
   background: #e4d3ff;

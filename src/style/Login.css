@@ -45,6 +45,19 @@ margin-bottom: 15px;
 .login-wrap button:hover{
   background: #b486ff;
 }
+.login-wrap .password-btn{
+  background: none;
+  position: absolute;
+  bottom: 30px;
+  right: 10px;
+  font-size: 20px;
+  height: 20px; 
+  width: 20px;
+}
+.login-wrap .password-btn:hover{
+  background: none;
+  color: #9e6f6f;
+}
 
 /** Password Section**/
 .login-wrap.password-area{

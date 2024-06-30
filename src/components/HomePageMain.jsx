@@ -2,9 +2,8 @@ import { useEffect, useRef, useContext } from "react";
 import "../style/HomePageMain.css";
 import { useNavigate } from "react-router-dom";
 import { DataContext } from "./DataProviderContext";
-import PropTypes from 'prop-types';
 
-function HomePageMain({ clientIconRef }) {
+function HomePageMain() {
   const videoRefs = useRef([]);
   const navigate = useNavigate();
   const { data } = useContext(DataContext);
@@ -49,8 +48,8 @@ function HomePageMain({ clientIconRef }) {
                 src={item.image}
                 alt={`thumbnail-${index}`}
                 className="bottom-image"
-                ref={(el) => (clientIconRef.current[index] = el)}
                 data-id={item.id}
+                onClick={()=>navigate(`/client-all-data/${data[index].id}`)}
               />
               <div className="card-info">
                 <h1>{item.title}</h1>
@@ -65,9 +64,5 @@ function HomePageMain({ clientIconRef }) {
     </div>
   );
 }
-
-HomePageMain.propTypes = {
-  clientIconRef: PropTypes.shape({ current: PropTypes.array }).isRequired,
-};
 
 export default HomePageMain;

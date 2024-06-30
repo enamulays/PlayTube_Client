@@ -1,48 +1,37 @@
-.contaner_bottom {
-  display: grid;
-  grid-template-columns: 1fr 5fr;
-}
-.sidebar_wrapper {
-  border-right: 1px solid var(--white);
-  width: 250px;
-}
-.right {
-  position: relative;
-  height: 100vh;
-  overflow-y: auto;
-}
-.right::-webkit-scrollbar{
-  display: none;
-}
+
 .branner {
   height: 200px;
 }
-.mid{
+.branner img {
+  height: 100%;
+  width: 100%;
+}
+.mid {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 25px 15px;
+  padding: 0 25px 0px;
+  background: var(--contain);
 }
-.channel{
+.channel {
   display: flex;
   justify-content: flex-start;
   align-items: end;
   gap: 15px;
 }
-.channel img{
+.channel img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
 }
-.channel_content h4{
-  margin-bottom: 5px;
+.channel_content h4 {
+  padding-bottom: 5px;
 }
-.channel_content h5{
+.channel_content h5 {
   font-weight: 400;
-  margin-bottom: 3px;
-
+  padding-bottom: 3px;
 }
-.subscribebtn{
+.subscribebtn {
   background: var(--red);
   border: none;
   padding: 8px 12px;
@@ -54,31 +43,32 @@
   color: var(--white);
   cursor: pointer;
 }
-.subscribebtn:hover{
+.subscribebtn:hover {
   background: #d33f3f;
 }
-.bottom{
+.bottom {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   margin: 0px 15px;
-  padding-bottom: 10px;
+  padding: 20px 0 15px;
   column-gap: 25px;
-  border-bottom: 2px solid #9CA3AF;
+  border-bottom: 2px solid #9ca3af;
   position: sticky;
-  top:10px;
+  top: 0px;
   background: var(--contain);
+  z-index: 10;
 }
-.bottom button{
+.bottom button {
   padding: 10px;
   font-size: 16px;
   background: none;
-  border:none;
+  border: none;
   color: var(--white);
   background: #2e2f30;
 }
-.bottom button:hover{
-  background: #9CA3AF;
+.bottom button:hover {
+  background: #9ca3af;
 }
-.bottom .btnactive{
-  background-color: #9CA3AF;;
+.bottom .btnactive {
+  background-color: #9ca3af;
 }

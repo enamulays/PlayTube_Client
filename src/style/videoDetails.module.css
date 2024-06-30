@@ -1,7 +1,4 @@
-.container_bottom {
-  display: grid;
-  grid-template-columns: 0.5fr 10.3fr;
-}
+
 .sidebar_wrapper {
   width: 100%;
   border-right: 1px solid var(--white);
