@@ -21,7 +21,7 @@ function VideoDetailsSection() {
   const handleChanges = () => {
     singleref.current.src = video;
   };
-
+ 
   return ( 
     <>
       <div className={`${styles.container_bottom}`}>
