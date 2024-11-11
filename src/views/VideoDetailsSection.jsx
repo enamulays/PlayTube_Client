@@ -22,7 +22,7 @@ function VideoDetailsSection() {
     singleref.current.src = video;
   };
 
-  return (
+  return ( 
     <>
       <div className={`${styles.container_bottom}`}>
         <div className={styles.video_details}>
